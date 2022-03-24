@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+input{
+	width: 300px;
+	height: 30px;
+}
+select{
+	height: 35px;
+}
+#yy{
+	width: 120px;
+}
+#mm,#dd{
+	width: 80px;
+}
+#gender{
+	width: 310px;
+}
+#phbt{
+	width: 100px;
+	height: 35px;
+	margin: 0;
+}
+#ph{
+	width: 200px;
+}
+#insertbt{
+	width: 310px;
+	height: 30px;
+}
+table{
+	margin : auto;
+}
+</style>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	<table>
+		<tr>
+			<td><span>아이디</span></td>
+		</tr>
+		<tr>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td><label>비밀번호</label></td>
+		</tr>
+		<tr>
+			<td><input type="password"></td>
+		</tr>
+		<tr>
+			<td><label>비밀번호확인</label>	<td>
+		</tr>
+		<tr>
+			<td>
+				<input type="password">
+			</td>
+		</tr>
+		<tr>
+			<td><label>이름</label></td>
+		</tr>
+		<tr>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td><label>생년월일</label></td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" id="yy" placeholder="년(4자)" aria-label="년(4자)" class="int" maxlength="4">
+				<select id="mm" class="sel" aria-label="월">
+					<option value="">월</option>
+					<option value="01">1</option>
+					<option value="02">2</option>
+					<option value="03">3</option>
+					<option value="04">4</option>
+					<option value="05">5</option>
+					<option value="06">6</option>
+					<option value="07">7</option>
+					<option value="08">8</option>
+					<option value="09">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<input type="text" id="dd" placeholder="일" aria-label="일" class="int" maxlength="2">
+			</td>
+		</tr>
+		<tr>
+			<td><label>성별</label></td>
+			</tr>
+		<tr>
+			<td>
+				<select id="gender" name="gender" class="sel" aria-label="성별">
+					<option value="" selected="">성별</option>
+					<option value="M">남자</option>
+					<option value="F">여자</option>
+					<option value="U">선택 안함</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>본인 확인 이메일 <small>(선택)</small></label></td>
+			</tr>
+		<tr>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td><label>휴대전화</label></td>
+		</tr>
+			<td><input type="text"></td>
+		<tr>
+			<td><input type="text" id="ph"><button id="phbt">인증번호 받기</button></td>
+		</tr>
+		<tr>	
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="가입하기" id="insertbt"></td>
+		</tr>
+
+	</table>
+</form>
+</body>
+</html>

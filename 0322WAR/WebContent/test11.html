@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>회원가입폼(test11.html)</title>
+</head>
+<body>
+  <h2>회원가입</h2>
+  <form>
+    <table border="0" cellpadding="8px" cellspacing="0px">
+      <caption><p><font size="5"><b>회 원 가 입</b></font></p></caption>
+      <colgroup>
+        <col bgcolor="pink">
+        <col bgcolor="yellow">
+      </colgroup>
+      <tr>
+        <td><label for="mid">아이디</label></td>
+        <td><input type="text" name="mid" id="mid" placeholder="아이디를 입력하세요" autofocus /></td>
+      </tr>
+      <tr>
+        <td><label for="pwd">비밀번호</label></td>
+        <td><input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력하세요" /></td>
+      </tr>
+      <tr>
+        <td><label for="name">성명</label></td>
+        <td><input type="text" name="name" id="name" placeholder="성명을 입력하세요" /></td>
+      </tr>
+      <tr>
+        <td><label for="age">나이</label></td>
+        <td><input type="number" name="age" id="age" size="3" maxlength="3"/></td>
+      </tr>
+      <tr>
+        <td>입사일</td>
+        <td><input type="date" name="ipsail" /></td>
+      </tr>
+      <tr>
+        <td>출근시간</td>
+        <td><input type="time" name="start" value="09:20" readonly /></td>
+      </tr>
+      <tr>
+        <td>퇴근시간</td>
+        <td><input type="time" name="end" /></td>
+      </tr>
+      <tr>
+        <td>성별</td>
+        <td>
+          <input type="radio" name="gender" value="남자" checked />남자
+          <input type="radio" name="gender" value="여자" />여자
+        </td>
+      </tr>
+      <tr>
+        <td>취미</td>
+        <td>
+          <input type="checkbox" name="hobby" value="등산" />등산
+          <input type="checkbox" name="hobby" value="낚시" />낚시
+          <input type="checkbox" name="hobby" value="바둑" />바둑
+          <input type="checkbox" name="hobby" value="수영" />수영
+          <input type="checkbox" name="hobby" value="승마" />승마
+          <input type="checkbox" name="hobby" value="축구" />축구
+        </td>
+      </tr>
+      <tr>
+        <td>가보고싶은산</td>
+        <td>
+          <select name="mnt">
+            <option value="금강산">금강산</option>
+            <option value="백두산">백두산</option>
+            <option value="한라산">한라산</option>
+            <option value="태백산">태백산</option>
+            <option value="소백산">소백산</option>
+            <option value="속리산">속리산</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>좋아하는음식</td>
+        <td>
+          <select name="food" size="5" multiple>
+            <option value="짜장면">짜장면</option>
+            <option value="피자">피자</option>
+            <option value="초코렛">초코렛</option>
+            <option value="떡복이">떡복이</option>
+            <option value="찐빵">찐빵</option>
+            <option value="삼겹살">삼겹살</option>
+            <option value="순대국">순대국</option>
+            <option value="볶은밥">볶은밥</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>자기소개</td>
+        <td>
+          <textarea rows="5" cols="50" name="content"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>첨부파일</td>
+        <td><input type="file" name="file" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="skyblue">
+          <input type="submit" value="회원가입" /> &nbsp;
+          <input type="reset" value="다시입력" />
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

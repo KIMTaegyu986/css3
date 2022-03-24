@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<style type="text/css">
+.reg{
+	color: green;
+	text-align: left;
+}
+#num{
+	width: 50px;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<legend><h3>수강 신청인</h3></legend>
+		<table>
+		<tr>
+			<td><label>학번</label></td>
+			<td><input type="text" autofocus="autofocus"></td>
+		</tr>
+		<tr>
+			<td><label>이름</label></td>
+			<td><input type="text"><td>
+		</tr>
+		<tr>
+			<td>학과</td>
+			<td>
+			<select name="class">
+	          <option value="컴퓨터공학과">컴퓨터공학과</option>
+	          <option value="토목공학과">토목공학과</option>
+	          <option value="건축공학과">건축공학과</option>
+	          <option value="기계공학과">기계공학과</option>
+	     	 </select>
+	     	 <td>
+		</tr>
+		</table>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend><h3>수강 과목을 선택하세요</h3></legend>
+		선호색상
+		<input type="color">
+		<br><br>
+		신청 과목(회화)
+		<input type="radio" name="subject" value="영어 회화(초급)" checked id="e"><label for='e'>영어 회화(초급)</label>
+		<input type="radio" name="subject" value="영어 회화(중급)" id="m"><label for='m'>영어 회화(중급)</label>
+		<input type="radio" name="subject" value="영어 회화(고급)" id="h"><label for='h'>영어 회화(고급)</label>
+		<br><br>
+		신청 과목(자격)
+		<input type="radio" name="certificate" value="TOELC" checked id="tl"><label for='tl'>TOELC</label>
+		<input type="radio" name="certificate" value="TOEFL" id="tf"><label for='tf'>TOEFL</label>
+		<input type="radio" name="certificate" value="OPIC" id="o"><label for='o'>OPIC</label>
+		<br><br>
+		관심분야
+		<input type="checkbox" name="hobby" value="문법" />문법
+          <input type="checkbox" name="hobby" value="회화" />회화
+          <input type="checkbox" name="hobby" value="리스닝" />리스닝
+          <input type="checkbox" name="hobby" value="뉴스 청취" />뉴스 청취
+          <input type="checkbox" name="hobby" value="독해" />독해
+	</fieldset>
+	<br>
+	<fieldset id="id2">
+		<legend><h3>강의 시간을 선택하세요</h3></legend>
+			<table style="margin-left: 10%">
+		
+				<tr>
+					<td>
+						개강주 
+					</td>
+					<td>	
+						<input type="date">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						지원물품(1인당 5개)
+					</td>
+					<td>
+						<input type="time">
+					</td>
+				</tr>
+			</table>
+	</fieldset>
+	<br>
+	<fieldset>
+	<legend><h3>수강과목</h3></legend>
+		<label class="reg">영어회화(초급)</label>
+		<input type="text" value="오전 : 9:00 ~ 11:00">
+	</fieldset>
+	<br>
+	<fieldset>
+	<legend><h3>신청자</h3></legend>
+		<table>
+			<tr>
+				<td><label class="reg"><strong>이름</strong> </label></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td><label class="reg"><strong>학번</strong> </label></td>
+				<td><input type="text" placeholder="하이폰없이 입력"></td>
+			</tr>
+			<tr>
+				<td><label class="reg"><strong>학과</strong> </label></td>
+				<td><select name="class">
+						<option value="컴퓨터공학과">컴퓨터공학과</option>
+						<option value="토목공학과">토목공학과</option>
+						<option value="건축공학과">건축공학과</option>
+						<option value="기계공학과">기계공학과</option>
+				</select></td>
+				</td>
+			</tr>
+			<tr>
+				<td><label class="reg"><strong>연락처</strong> </label></td>
+				<td><input type="text"></td>
+			</tr>
+		</table>
+
+	</fieldset>
+	<fieldset>
+	<legend><h3>교제 주문</h3></legend>
+		<table>
+			<tr>
+				<td><label class="reg"><strong>교제</strong> </label></td>
+				<td><input type="number" id="num"></td>
+			</tr>
+			<tr>
+				<td><label class="reg"><strong>워크시트</strong> </label></td>
+				<td><input type="number" id="num"></td>
+			</tr>
+			<tr>
+				<td><label class="reg"><strong>단체주문</strong> </label></td>
+				<td><input type="number" id="num"></td>
+			</tr>
+		</table>
+	</fieldset>
+	<br>
+	<fieldset>
+		<button type="button" type="submit">신청하기</button>
+		<input type="button" type="reset" value="다시쓰기">
+	</fieldset>
+</body>
+</html>

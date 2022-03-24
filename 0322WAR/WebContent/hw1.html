@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<style type="text/css">
+fieldset{
+	width: 600px;
+}
+#red{
+	color: red;
+}
+.fild{
+	margin-left: 100px;
+}
+th{
+	text-align: left;
+}
+
+#wrapper{
+	width: 150px;
+	margin: auto;
+}
+.num{
+	width: 50px;
+}
+td{
+	margin-left: 30px;
+}
+#id2{
+	border: 0 solid
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<legend style="color: blue;">로그인</legend>
+		<label>아이디</label>
+		<input type="text" autofocus="autofocus">
+		<label>비밀번호</label>
+		<input type="password">
+		<button>로그인</button>
+	</fieldset>
+	<fieldset>
+		<legend style="color: blue;">가입하기</legend>
+			<table>
+				<tr>
+					<th>
+						<label>아이디</label><label id= "red"> * </label>
+					</th>
+					<td>
+						<input type="text" class="fild" autofocus="autofocus">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label>비밀번호</label><label id= "red"> * </label>
+					</th>
+					<td>
+						<input type="password" class="fild">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label>비밀번호 확인</label><label id= "red"> * </label>
+					</th>
+					<td>
+						<input type="password" class="fild">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label>이름</label><label id= "red"> * </label>
+					</th>
+					<td>
+						<input type="text" class="fild">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label>메일 주소</label><label id= "red"> * </label>
+					</th>
+					<td>
+						<input type="text" class="fild">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label>전화 번호</label><label id= "red"> * </label>
+					</th>
+					<td>
+						<input type="text" class="fild">
+					</td>
+				</tr>
+			</table>
+	</fieldset>
+	<br>
+	<fieldset>
+	<table id="insertbt">
+		<tr>
+			<div id="wrapper">
+				<button type="button" type="submit">가입하기</button>
+				<input type="button" type="reset" value="다시쓰기">
+			</div>
+		</tr>
+	</table>
+	</fieldset>
+	<br>
+	<fieldset id="id2">
+		<h3>등록 정보</h3>
+		<table style="margin-left: 10%">
+	
+			<tr>
+				<td>
+					참여인원(최대10명)
+				</td>
+				<td>	
+					<input type="number"class="num">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					지원물품(1인당 5개)
+				</td>
+				<td>
+					<input type="number" class="num">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					희망 단계(하,중,상)
+				</td>
+				<td>	
+					<input type="range">
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<br>
+	<fieldset>
+		<h3>수강 과목을 선택하세요(1과목 선택 가능)</h3>
+		신청 과목(회화)
+		<input type="radio" name="subject" value="영어 회화(초급)" checked id="e"><label for='e'>영어 회화(초급)</label>
+		<input type="radio" name="subject" value="영어 회화(중급)" id="m"><label for='m'>영어 회화(중급)</label>
+		<input type="radio" name="subject" value="영어 회화(고급)" id="h"><label for='h'>영어 회화(고급)</label>
+		<br><br>
+		신청 과목(자격)
+		<input type="radio" name="certificate" value="TOELC" checked id="tl"><label for='tl'>TOELC</label>
+		<input type="radio" name="certificate" value="TOEFL" id="tf"><label for='tf'>TOEFL</label>
+		<input type="radio" name="certificate" value="OPIC" id="o"><label for='o'>OPIC</label>
+	</fieldset>
+</body>
+</html>
